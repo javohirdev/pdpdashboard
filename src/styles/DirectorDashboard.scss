@@ -1,0 +1,605 @@
+//Colors
+$colorWhite: #ffffff;
+$colorBlack: #000000;
+
+//Scroll bar
+
+::-webkit-scrollbar{
+    width: 3px !important;
+}
+::-webkit-scrollbar-track{
+    background-color: #E5E5E5;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #00b533;
+    border-radius: 10px;
+}
+
+//Main
+
+div{ //Sidebar
+    div{
+        div{
+            box-shadow: none!important;
+            div{ //Sidebar backround
+                background-color: transparent!important;
+            }
+            .logo{ //PDP Logo
+                padding: 2rem;
+            }
+            .closeSec{
+                display: flex;
+                justify-content: flex-end;
+                margin: 0 12rem;
+                cursor: pointer;
+            }
+            .links{
+                margin: 3rem 0;
+                li{
+                    margin: 15px;
+                    a{
+                        margin-left: 1rem;
+                        text-decoration: none!important;
+                        color: $colorBlack;
+                        font-weight: 500;
+                    }
+                }
+                &:nth-child(4){ //second ul tag
+                    margin: 19rem 0;
+                    li{
+                        a{
+                            color: #b1b1b1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.Profile{ 
+    .main{
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem 2rem;
+        .profile__name{
+            margin-right: 2rem;
+            p{
+                font-weight: 600;
+            }
+        }
+        .functions{
+            display: flex;
+            .user{
+                margin: 0 2rem;
+            }
+        }
+    }
+}
+.Dashboard{
+    margin: 2rem 18rem;
+    .DashboardTop{
+        h3{
+            text-transform: uppercase;
+            margin: 0 1rem 3rem;
+        }
+        .container{
+            .col-md-4{
+                .infoCard{
+                      .cardHeader{
+                        p{
+                            margin-bottom: 0;
+                            width: 70%;
+                            font-weight: 500;
+                        }
+                        .calendar{
+                            margin-left: 2rem;
+                        }
+                      }
+                      .cardBody{
+                        h4{
+                            font-size: 3rem;
+                        }
+                        p{
+                            margin: 0.3rem 1rem;
+                        }
+                      }
+                } 
+            }
+        }
+    }
+    .DashboardStat{
+        .box{
+            margin: 1rem 2rem;
+            .top{
+                p{
+                    width: 30%;
+                    font-weight: 700;
+                }
+                .dropdown{
+                    margin: 0 1rem 0 5rem;
+                    button{
+                        background-color: transparent!important;
+                        color: $colorBlack;
+                        border: 2px solid #000000;
+                        border-radius: 0;
+                        &:focus{
+                            box-shadow: none!important;
+                            outline: none!important;
+                        }
+                    }
+                }
+                .date{
+                    font-weight: 700;
+                    margin: 0.5rem 0;
+                }
+            }
+            .boxFooter{
+                .buttons{
+                    margin: 4rem 0;
+                    a{
+                        color: $colorBlack;
+                        font-weight: 300;
+                        margin: 5px;
+                        &:nth-child(2){
+                            box-shadow: 1px 5px 6px 0 #73707042;
+                            border-radius: 10px;
+                            padding: 10px;
+                        }
+                    }
+                }
+                .priceInfo{
+                    margin: 2rem 7rem;
+                    .price{
+                        font-size: 2.5rem;
+                        margin: 0;
+                    }
+                    span{
+                        display: flex;
+                    }
+                }
+            }
+            .pieCharts{
+                position: absolute;
+                top: 51%;
+                left: 79%;
+                .pieChart{ //Pie chart style
+                    .title{
+                        font-weight: 700;
+                        margin: 0 0 2rem;
+                    }
+    
+                    /* RESET STYLES */
+        
+                    .chart-skills {
+                        margin: 0 auto;
+                        padding: 0;
+                        list-style-type: none;
+                    }
+                    
+                    .chart-skills *,
+                    .chart-skills::before {
+                        box-sizing: border-box;
+                    }
+                    
+                    
+                    /* CHART-SKILLS STYLES
+                    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+                    
+                    .chart-skills {
+                        position: relative;
+                        width: 250px;
+                        height: 125px;
+                        overflow: hidden;
+                        margin-top: 7rem;
+                    }
+                    
+                    .chart-skills::before,
+                    .chart-skills::after {
+                        position: absolute;
+                    }
+                    
+                    .chart-skills::before {
+                        content: 'umumiy userlar';
+                        margin: 1.3rem 1.7rem;
+                        width: inherit;
+                        height: inherit;
+                        border: 45px solid rgba(211, 211, 211, .3);
+                        border-bottom: none;
+                        border-top-left-radius: 175px;
+                        border-top-right-radius: 175px;
+                    }
+                    
+                    .chart-skills::after {
+                        content: '125.000';
+                        top: 70%;
+                        left: 50%;
+                        bottom: 10px;
+                        transform: translateX(-50%);
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        color: $colorBlack;
+                    }
+                    
+                    .chart-skills li {
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        width: inherit;
+                        height: inherit;
+                        border: 45px solid;
+                        border-top: none;
+                        border-bottom-left-radius: 175px;
+                        border-bottom-right-radius: 175px;
+                        transform-origin: 50% 0;
+                        transform-style: preserve-3d;
+                        backface-visibility: hidden;
+                        animation-fill-mode: forwards;
+                        animation-duration: .4s;
+                        animation-timing-function: linear;
+                    }
+                    
+                    .chart-skills li:nth-child(1) {
+                        z-index: 4;
+                        border-color: green;
+                        animation-name: rotate-one;
+                    }
+                    
+                    .chart-skills li:nth-child(2) {
+                        z-index: 3;
+                        border-color: firebrick;
+                        animation-name: rotate-two;
+                        animation-delay: .4s;
+                    }
+                    
+                    .chart-skills li:nth-child(3) {
+                        z-index: 2;
+                        border-color: steelblue;
+                        animation-name: rotate-three;
+                        animation-delay: .8s;
+                    }
+                    
+                    .chart-skills li:nth-child(4) {
+                        z-index: 1;
+                        border-color: orange;
+                        animation-name: rotate-four;
+                        animation-delay: 1.2s;
+                    }
+                    
+                    .chart-skills span {
+                        position: absolute;
+                        font-size: .85rem;
+                        backface-visibility: hidden;
+                        animation: fade-in .4s linear forwards;
+                    }
+                    
+                    .chart-skills li:nth-child(1) span {
+                        top: 5px;
+                        left: 10px;
+                        transform: rotate(-21.6deg);
+                    }
+                    
+                    .chart-skills li:nth-child(2) span {
+                        top: 20px;
+                        left: 10px;
+                        transform: rotate(-79.2deg);
+                        animation-delay: .4s;
+                    }
+                    
+                    .chart-skills li:nth-child(3) span {
+                        top: 18px;
+                        left: 10px;
+                        transform: rotate(-140.4deg);
+                        animation-delay: .8s;
+                    }
+                    
+                    .chart-skills li:nth-child(4) span {
+                        top: 10px;
+                        left: 10px;
+                        transform: rotate(-180deg);
+                        animation-delay: 1.2s;
+                    }
+                    
+                    
+                    /* ANIMATIONS
+                    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+                    
+                    @keyframes rotate-one {
+                        100% {
+                        transform: rotate(21.6deg);
+                        /**
+                        * 12% => 21.6deg
+                        */
+                        }
+                    }
+                    
+                    @keyframes rotate-two {
+                        0% {
+                        transform: rotate(21.6deg);
+                        }
+                        100% {
+                        transform: rotate(79.2deg);
+                        /**
+                        * 32% => 57.6deg 
+                        * 57.6 + 21.6 => 79.2deg
+                        */
+                        }
+                    }
+                    
+                    @keyframes rotate-three {
+                        0% {
+                        transform: rotate(79.2deg);
+                        }
+                        100% {
+                        transform: rotate(140.4deg);
+                        /**
+                        * 34% => 61.2deg 
+                        * 61.2 + 79.2 => 140.4deg
+                        */
+                        }
+                    }
+                    
+                    @keyframes rotate-four {
+                        0% {
+                        transform: rotate(140.4deg);
+                        }
+                        100% {
+                        transform: rotate(180deg);
+                        /**
+                        * 22% => 39.6deg  
+                        * 140.4 + 39.6 => 180deg
+                        */
+                        }
+                    }
+                    
+                    @keyframes fade-in {
+                        0%,
+                        90% {
+                        opacity: 0;
+                        }
+                        100% {
+                        opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    .DashboardCharts{ //Line Chart style
+        .main{
+            .chartsHead{
+                display: flex;
+                justify-content: space-around;
+                p{
+                    width: 20%;
+                    font-weight: 700;
+                }
+                .realMoney{
+                    display: grid;
+                    .greenDot{
+                        background-color: rgb(0, 128, 0)!important;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 20px;
+                        position: absolute;
+                        top: 88.5%;
+                        left: 51%;
+                    }
+                    &:nth-child(3){
+                        .yellowDot{
+                            background-color: rgb(255, 251, 5)!important;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 20px;
+                            position: absolute;
+                            top: 88.5%;
+                            left: 38.5%;
+                        }
+                    }
+                }
+                .date{
+                    font-weight: 700;
+                }
+            }
+            .chartsBody{
+                canvas{
+                    width: 700px!important;
+                    height: 350px!important;
+                    margin: 2rem 2rem;
+                }
+            }
+            &:nth-child(2){ //Second Chart style
+                .realMoney{
+                    .greenDot{
+                        position: absolute;
+                        top: 161%;
+                    }
+                    &:nth-child(3){
+                        .yellowDot{
+                            position: absoulute;
+                            top: 161%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.MentorsPay{
+    .dataTable{
+        .dataTableHead{
+            .titleDate{
+                display: flex;
+                justify-content: space-between;
+                p{
+                    font-weight: 700;
+                }
+            }
+        }
+        .dataTableBody{
+            table{
+                thead{
+                    border-bottom: 3px solid $colorBlack;
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+
+
+/**RESPONSIVE**/
+
+@media screen and (max-width: 370px){
+    div{ //Sidebar
+        div{
+            width: 100%!important;
+            overflow-x: hidden;
+            .SidebarContent{ //Sidebar content
+                overflow-x: hidden;
+                background-color: $colorWhite!important;
+                .logo{
+                    padding: 1rem;
+                    width: 55%;
+                }
+                .closeSec{
+                    display: block!important;
+                    position: absolute;
+                    left: 90px;
+                    top: 20px;
+                    cursor: pointer;
+                    img{
+                        width: 8%!important;
+                    }
+                }
+                .links{ //ul tag
+                    margin: 0;
+                    padding: 0;
+                    &:nth-child(2){
+                        margin: 7rem 0;
+                    }
+                }
+            }
+        }
+    }
+    .Dashboard{
+        margin:0;
+        .DashboardTop{
+            .container{
+                display: inline!important;
+            }
+        }
+        .DashboardStat{
+            .box{
+                .top{
+                    display: inline!important;
+                    p{
+                        width: 60%;
+                    }
+                    .dropdown{
+                        margin: 0;
+                    }
+                }
+                .boxFooter{
+                    display: none!important;
+                }
+                .pieCharts{
+                    position: absolute;
+                    top: 330%;
+                    z-index: 0;
+                    left: 10px;
+                }
+            }
+        }
+        .DashboardCharts{
+            display: none;
+        }
+    }
+    .MentorsPay{
+        .dataTable{
+            .dataTableHead{
+                .titleData{
+                    display: inline;
+                }
+            }
+            .dataTableBody{
+                overflow-x: scroll;
+            }
+        }
+    }
+}
+@media (min-width: 315px) and (max-width: 330px){
+    div{ //Sidebar
+        div{
+            width: 100%!important;
+            overflow-x: hidden;
+            .SidebarContent{ //Sidebar content
+                overflow-x: hidden;
+                background-color: $colorWhite!important;
+                .logo{
+                    padding: 1rem;
+                    width: 55%;
+                }
+                .closeSec{
+                    display: block!important;
+                    position: absolute;
+                    left: 90px;
+                    top: 20px;
+                    cursor: pointer;
+                    img{
+                        width: 8%!important;
+                    }
+                }
+                .links{ //ul tag
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .Dashboard{
+        margin:0;
+        .DashboardTop{
+            .container{
+                display: inline!important;
+            }
+        }
+        .DashboardStat{
+            .box{
+                .top{
+                    display: inline!important;
+                    p{
+                        width: 60%;
+                    }
+                    .dropdown{
+                        margin: 0;
+                    }
+                }
+                .boxFooter{
+                    display: none!important;
+                }
+                .pieCharts{
+                    position: absolute;
+                    top: 460%;
+                    left: 10px;
+                    z-index: 0;
+                }
+            }
+        }
+        .DashboardCharts{
+            display: none;
+        }
+    }
+    .MentorsPay{
+        .dataTable{
+            .dataTableHead{
+                .titleData{
+                    display: inline;
+                }
+            }
+            .dataTableBody{
+                overflow-x: scroll;
+            }
+        }
+    }
+}

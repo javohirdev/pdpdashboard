@@ -1,0 +1,59 @@
+.MainChat{
+    .container{
+        .row{
+            .col-md-4{
+                .levelLesson{
+                    p{
+                        font-weight: 700;
+                    }
+                }
+                &:nth-child(2){
+                    .messages{
+                        .file{
+                            width: 70%;
+                            padding-left: 2rem;
+                            .icon{
+                                img{
+                                    background-color: rgb(129, 129, 129);
+                                    padding: 14px;
+                                    border-radius: 50px;
+                                    margin-right: 1rem;
+                                }
+                            }
+                            .fileData{
+                                display: grid;
+                                font-weight: 700;
+                                span{
+                                    color: rgb(167, 167, 167);
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
+                }
+                &:nth-child(3){
+                    .messages{
+                        .file{   
+                            .icon{
+                                img{
+                                    background-color: rgb(235, 164, 13);
+                                    padding: 14px;
+                                    border-radius: 50px;
+                                    margin-right: 1rem;
+                                }
+                            }
+                            .fileData{
+                                display: grid;
+                                font-weight: 700;
+                                span{
+                                    color: rgb(167, 167, 167);
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
